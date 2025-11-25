@@ -14,6 +14,7 @@ mod borsh;
 mod bytemuck;
 mod der;
 pub mod diesel;
+mod facet;
 mod fastrlp_03;
 mod fastrlp_04;
 mod num_bigint;

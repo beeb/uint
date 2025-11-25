@@ -126,6 +126,9 @@ sqlx-core = { version = "0.8.2", optional = true }
 # borsh
 borsh = { version = "1.5", optional = true, default-features = false }
 
+# facet
+facet-core = { version = "0.31.4", optional = true }
+
 [dev-dependencies]
 ruint = { path = ".", features = ["arbitrary", "proptest"] }
 
@@ -202,6 +205,7 @@ borsh = ["dep:borsh"]
 bytemuck = ["dep:bytemuck"]
 der = ["dep:der", "alloc"] # TODO: also have alloc free der impls.
 diesel = ["dep:diesel", "std", "dep:thiserror"]
+facet = ["dep:facet-core"]
 fastrlp = ["dep:fastrlp-03", "alloc"]
 fastrlp-04 = ["dep:fastrlp-04", "alloc"]
 num-bigint = ["dep:num-bigint", "alloc"]
